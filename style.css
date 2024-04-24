@@ -63,9 +63,10 @@
             font-weight:700;
           }
         #resetbtn:active{
-           transition:100ms ease out;
+           transition:150ms ease out;
           background-color:#fff;
                 color:#fa7e1e;
+                  border:2px solid  #fa7e1e;
 
         }
           h1{
