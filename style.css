@@ -62,6 +62,13 @@
             color:white;
             font-weight:700;
           }
+        #resetbtn:active{
+           transition:150ms ease out;
+          background-color:#fff;
+                color:#fa7e1e;
+                  border:2px solid  #fa7e1e;
+
+        }
           h1{
           margin-left:28%;
           text-shadow:4px 4px 4px yellow;
