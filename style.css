@@ -1,173 +1,129 @@
-        .myContainer{
-        margin-top:20%;
-            border: 8px solid black;
-            width: device-width;
-            height:500px;
-  
-          }
-          #cell:hover{
-           background-color:#5d94b4;
-            transform: scale3d(1.03,1.03,1);
-          }
-          .myContainer .gamecontainer .cellcontainer {
+.myContainer{
+        border: 5px solid black;
+        min-width:350px;
+        height:500px;
+       position: relative;
+      }
 
-            width: 250px;
-            margin: 15%;
-            height: 248px;
-            box-shadow:10px 10px 10px black;
-            display: grid;
-            grid-template-columns: repeat(3, auto);
-           
-          }
-          .myContainer .cellcontainer #cell {
-            border: 2px solid black;
-            width: 80px;
-            height: 80px;
-            text-align: center;
-            box-shadow: 2px 2px 1px black;
-            font-size: 60px;
-             text-shadow: 2px 2px 2px skyblue;
-                         font-family: "Trebuchet MS";
-          }
-          span {
-            text-align: center;
-            font-size: 30px;
-            text-shadow: 4px 4px 2px skyblue;
-            font-family: Helvetica;
-          }
-          .playertext {
-            width: 130px;
-            margin-left: 40%;
-            margin-top: -10%;
-          }
-          #resetbtn {
-            margin-left:-15%;
-            margin-top: 30%;
-            border: 2px solid  #fa7e1e;
-            border-radius:25px;
-            width: 130px;
-            height: 45px;
-            text-align: center;
-            font-family: "Times New Roman", Times, serif;
-            font-size: 18px;
-            font-weight: 700;
-            color: #fa7e1e;
-            position: static;
-            transition: ease-out 0.5s;
-          }
-          #resetbtn:hover{
-            transition:300ms ease-in;
-            background-color: #fa7e1e;
-            border:2px solid  #fa7e1e;
-            color:white;
-            font-weight:700;
-          }
-        #resetbtn:active{
-           transition:150ms ease out;
-          background-color:#fff;
-                color:#fa7e1e;
-                  border:2px solid  #fa7e1e;
-
-        }
-          h1{
-          margin-left:28%;
-          text-shadow:4px 4px 4px yellow;
-          margin-bottom:-10%;
-          }
-          body
-          {
-            justify-content: center;
-            display: flex;
-          background-color:#659DBD;
-          }
-    
-          
-          .social
-          {
-          width:100%;
-          height:10vh;
-          display:flex;
-          justify-content: center;
-          align-items: center;
-          gap:5px;
-          background:#659DBD;
-          }
-          .icon
-          {
-          width:40px;
-          height: 40px;
-          border-radius:40px;
-          background:#fff;
-          text-align: center;
-          font-size:20px;
-          line-height:45px;
-          overflow: hidden;
-          box-shadow:5px 10px 20px;
-          transition: all .3s ease-in-out;
-          }
+      .myContainer .gamecontainer .cellcontainer {
+        width: 250px;
+        margin: 15%;
+        height: 248px;
+        box-shadow:10px 10px 10px black;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+      }
+      .myContainer .cellcontainer #cell {
+        border: 2px solid black;
+        width: 80px;
+        height: 80px;
+        text-align: center;
+        box-shadow: 2px 2px 1px black;
+        font-size: 60px;
+        text-shadow: 2px 2px 2px skyblue;
+                     font-family: "Trebuchet MS";
+      }
+      span {
+        text-shadow: 4px 4px 2px skyblue;
+        font-family: Helvetica;
+      }
  
-          .icon:hover{
-          width:140px;
-          cursor:pointer;
-          display:flex;
-          align-items: center;
-          justify-content: space-evenly;
-          }
-          a{
-          text-decoration:none;
-          }
-          #contact{
-          font-size:20px;
-          }
-          #share
-          {
-          text-align: end;
-          font-size:10px;
-          }
-          #instagram
-          {
-          color:red;
-          }
-          #instagram:hover
-          {
-           
-          background:linear-gradient(#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);
-          color:#fff;
-          }
-          #whatsapp
-          {
-          color:#25D366;
-          }
-          #whatsapp:hover{
-          background:#25D366;
-          color:#fff;
-          }
-          #telegram{
-          color:#0088cc;
-          }
-          #telegram:hover{
-          color:#fff;        
-          background:#0088cc;
-          }
-          
-          #snapchat
-          {
-          color:rgb(235, 255, 17);
-          }
-          #snapchat:hover{
-          background:#FFFC00;
-          color:black;
-          }
-          #youtube{
-          color:#ff0000;
-          }
-          #youtube:hover{
-          color:#fff;
-          background:#ff0000;
-          }
-          .main{
-            justify-content: center;
-            align-items: center;
-            width:420px;
-            height:720px;
-          }
+      h1{
+      margin-left:28%;
+      text-shadow:3px 3px 3px yellow;
+      margin-bottom:-10%;
+      }
+      body
+      {
+        justify-content: center;
+        display: flex;
+        height:100vh;
+        align-items: center;
+        background-color:#659DBD;
+      }
+
+      .playertext {
+        position: absolute;
+        width: 100%;
+        max-height:100px;
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+            #resetbtn {
+              border: 2px solid  #fa7e1e;
+              border-radius:25px;
+              width: 130px;
+              height: 45px;
+              text-align: center;
+              font-family: "Times New Roman", Times, serif;
+              font-size: 18px;
+              font-weight: 700;
+              color: #fff;
+              background-color: #fa7e1e;
+              position: static;
+              transition:0.5s ease-out;
+            }
+
+
+
+
+
+      #resetbtn:active{
+        transform: scale(1);
+        background-color: #fff;
+        border:2px solid  #fa7e1e;
+        color: #fa7e1e;
+      }
+
+
+      @media (min-width:500px) {
+
+        #resetbtn:hover,#resetbtn:active{
+          transform: scale(1.05);
+        }
+        #resetbtn:hover{
+          background-color: #fa7e1e;
+          color:white;
+           }
+        #resetbtn:active,#resetbtn{
+          background-color: #fff;
+          color: #fa7e1e;
+           }
+
+      }
+
+
+
+
+
+      @media (min-width:550px) {
+
+        #resetbtn:hover{
+          transform: scale(1.1);
+          transition:300ms ease-in;
+          background-color: #fa7e1e;
+          border:2px solid  #fa7e1e;
+          color:white;
+          font-weight:700;
+        }
+        #resetbtn:active{
+          transform: scale(1);
+          transition:300ms ease-out;
+          background-color: #fff;
+          border:2px solid  #fa7e1e;
+          color: #fa7e1e;
+          font-weight:700;
+        }
+
+        
+      #cell:hover{
+        background-color:#5d94b4;
+         transform: scale3d(1.03,1.03,1);
+       }
+
+      }
+
